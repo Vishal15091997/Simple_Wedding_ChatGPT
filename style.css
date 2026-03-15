@@ -123,6 +123,61 @@ background:#d4af37;
 color:#000;
 }
 
+/* ---------- ROYAL DIVIDER ---------- */
+
+.section{
+position:relative;
+padding:110px 10%;
+text-align:center;
+}
+
+/* decorative divider */
+
+.section::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:50%;
+
+transform:translateX(-50%);
+
+width:140px;
+height:2px;
+
+background:linear-gradient(
+to right,
+transparent,
+#d4af37,
+transparent
+);
+
+}
+
+/* small decorative diamond */
+
+.section::after{
+
+content:"◆";
+
+position:absolute;
+
+top:-10px;
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:14px;
+
+color:#d4af37;
+
+background:#0f0f13;
+padding:0 8px;
+
+}
+
 /* ---------------- SECTIONS ---------------- */
 
 .section{
@@ -135,6 +190,16 @@ font-family:"Playfair Display",serif;
 font-size:40px;
 margin-bottom:40px;
 color:#d4af37;
+}
+
+.section-subtitle{
+
+color:#aaa;
+margin-top:-15px;
+margin-bottom:30px;
+font-size:16px;
+letter-spacing:1px;
+
 }
 
 /* ---------------- STORY ---------------- */
