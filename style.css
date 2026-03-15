@@ -7,6 +7,10 @@ color:#eee;
 
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 /* NAVBAR */
 
 .navbar{
@@ -55,6 +59,7 @@ color:#d4af37;
 
 }
 
+
 /* HERO */
 
 .hero{
@@ -72,6 +77,7 @@ justify-content:center;
 text-align:center;
 background:rgba(0,0,0,0.45);
 padding:40px;
+margin-top:60px;
 
 }
 
