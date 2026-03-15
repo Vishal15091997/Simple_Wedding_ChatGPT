@@ -2,64 +2,83 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Vishal & Simoni | Our Wedding</title>
+<title>Vishal & Simoni Wedding</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 </head>
+
 
 <body>
 
-<header>
+<!-- HERO -->
 
-<nav>
+<header class="hero">
 
-<h1 class="logo">Vishal & Simoni</h1>
+<div class="hero-overlay">
 
-<ul>
+<h1 class="hero-title">Vishal <span>♥</span> Simoni</h1>
 
-<li><a href="#story">Story</a></li>
-<li><a href="#couple">Bride & Groom</a></li>
-<li><a href="#events">Events</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#venue">Venue</a></li>
+<p class="hero-subtitle">
+Two Hearts • Two Families • One Beautiful Beginning
+</p>
 
-</ul>
+<div class="scroll-indicator"></div>
 
-</nav>
+</div>
 
 </header>
 
-<section class="hero">
 
-<div class="hero-overlay"></div>
 
-<div class="hero-content">
+<!-- COUNTDOWN -->
 
-<h2>Where Destiny Arranged Love</h2>
+<section class="section countdown">
 
-<p class="names">Vishal ❤ Simoni</p>
+<h2>Countdown To Our Wedding</h2>
+<p class="section-subtitle">20 November 2026</p>
 
-<p class="date">Wedding Celebration • 2026</p>
+<div class="countdown-container">
 
-<a href="#story" class="btn">Our Story</a>
+<div class="count-box">
+<span id="days"></span>
+<p>Days</p>
+</div>
+
+<div class="count-box">
+<span id="hours"></span>
+<p>Hours</p>
+</div>
+
+<div class="count-box">
+<span id="minutes"></span>
+<p>Minutes</p>
+</div>
+
+<div class="count-box">
+<span id="seconds"></span>
+<p>Seconds</p>
+</div>
 
 </div>
 
 </section>
 
-<section id="story" class="section story">
+
+
+<!-- OUR STORY -->
+
+<section class="section">
 
 <h2>Our Story</h2>
+
 <p class="section-subtitle">How Destiny Found Love</p>
-  
-<p>
+
+<p class="story-text">
 
 Two families met, and a simple introduction began what would become a
 beautiful journey.
@@ -77,30 +96,11 @@ respect, and affection blossomed into something truly special.
 
 </section>
 
-<section id="couple" class="section couple">
 
-<h2>The Couple</h2>
 
-<div class="couple-grid">
+<!-- COUPLE -->
 
-<div class="person">
-
-<img src="images/bride.jpg">
-
-<h3>Simoni</h3>
-
-<p>
-
-Graceful, warm, and full of life, Simoni brings light and joy wherever she goes.
-Her smile carries kindness, her laughter fills every room, and her presence
-makes the world feel a little brighter.
-
-She believes in the beauty of small moments, meaningful connections,
-and the magic that love quietly brings into our lives.
-
-</p>
-
-</div>
+<section class="section couple">
 
 <div class="person">
 
@@ -110,91 +110,74 @@ and the magic that love quietly brings into our lives.
 
 <p>
 
-Calm, thoughtful, and grounded, Vishal is someone who values sincerity,
-laughter, and the warmth of family.
+Calm, thoughtful and grounded, Vishal values sincerity,
+laughter and the warmth of family.
 
-With a quiet confidence and a heart that appreciates life's little joys,
-he brings stability, care, and warmth into every relationship.
-
-Together with Simoni, he begins a new chapter built on companionship,
-trust, and shared dreams.
+With quiet confidence and kindness, he brings stability,
+care and warmth into every relationship.
 
 </p>
 
 </div>
 
+
+<div class="person">
+
+<img src="images/bride.jpg">
+
+<h3>Simoni</h3>
+
+<p>
+
+Graceful, warm and full of life, Simoni brings joy
+wherever she goes.
+
+Her laughter lights every room and her presence
+makes the world a little brighter.
+
+</p>
+
 </div>
 
 </section>
 
-<section id="events" class="section events">
+
+
+<!-- EVENTS -->
+
+<section class="section events">
 
 <h2>Wedding Celebrations</h2>
+
 <p class="section-subtitle">
-Join us as we celebrate love, family, and new beginnings.
+Join us as we celebrate love and new beginnings
 </p>
-  
-<div class="events-grid">
 
-<div class="event">
+<div class="event-buttons">
 
-<h3>Engagement</h3>
+<a href="engagement.html" class="event-btn">Engagement</a>
 
-<p>Date: TBD</p>
+<a href="mehendi.html" class="event-btn">Mehendi</a>
 
-<p>Venue: TBD</p>
+<a href="haldi.html" class="event-btn">Haldi</a>
 
-</div>
+<a href="wedding.html" class="event-btn">Wedding</a>
 
-<div class="event">
-
-<h3>Mehendi</h3>
-
-<p>Date: TBD</p>
-
-<p>Venue: TBD</p>
-
-</div>
-
-<div class="event">
-
-<h3>Sangeet</h3>
-
-<p>Date: TBD</p>
-
-<p>Venue: TBD</p>
-
-</div>
-
-<div class="event">
-
-<h3>Wedding Ceremony</h3>
-
-<p>Date: TBD</p>
-
-<p>Venue: TBD</p>
-
-</div>
-
-<div class="event">
-
-<h3>Reception</h3>
-
-<p>Date: TBD</p>
-
-<p>Venue: TBD</p>
-
-</div>
+<a href="reception.html" class="event-btn">Reception</a>
 
 </div>
 
 </section>
 
-<section id="gallery" class="section gallery">
+
+
+<!-- MEMORIES -->
+
+<section class="section memories">
 
 <h2>Memories</h2>
 
-<div class="gallery-grid">
+<div class="gallery">
 
 <img src="images/photo1.jpg" loading="lazy">
 <img src="images/photo2.jpg" loading="lazy">
@@ -209,56 +192,75 @@ Join us as we celebrate love, family, and new beginnings.
 
 </section>
 
-<section id="venue" class="section venue">
+
+
+<!-- VENUE -->
+
+<section class="section venue">
 
 <h2>Wedding Venue</h2>
 
-<p>Fort Mangal Garh Palace</p>
-  
-<p>
-
-We would be honored to celebrate this special day with you.
-
-Join us at the beautiful Fort Mangal Garh Palace,
-where our families and friends will gather to witness
-the beginning of our new journey together.
-
-</p>
+<p class="section-subtitle">Fort Mangal Garh Palace</p>
 
 <div class="map-container">
 
 <iframe 
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1316.4152288809514!2d79.7517349101983!3d25.400929850403486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399d37d6ba0796f1%3A0x3e6354077ca7413d!2sFort%20Mangal%20Garh%20Palace!5e0!3m2!1sen!2sin!4v1773569495432!5m2!1sen!2sin"
-allowfullscreen=""
-loading="lazy"
-referrerpolicy="no-referrer-when-downgrade">
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1316.4152288809514!2d79.7517349101983!3d25.400929850403486!2m3!1f0!2f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399d37d6ba0796f1%3A0x3e6354077ca7413d!2sFort%20Mangal%20Garh%20Palace!5e0!3m2!1sen!2sin!4v1773569495432!5m2!1sen!2sin"
+loading="lazy">
 </iframe>
 
 </div>
 
-<a 
-href="https://www.google.com/maps/dir/?api=1&destination=Fort+Mangal+Garh+Palace"
+<a href="https://www.google.com/maps/dir/?api=1&destination=Fort+Mangal+Garh+Palace"
 target="_blank"
-class="btn">
+class="event-btn">
 
 Get Directions
+
 </a>
+
 </section>
+
+
+
+<!-- FOOTER -->
 
 <footer>
 
 <p class="footer-names">Vishal & Simoni</p>
 
-<p>
-Two hearts. Two families. One beautiful beginning.
-</p>
-
-<p style="margin-top:10px;color:#888;font-size:14px;">
-With love and gratitude for being part of our story.
-</p>
+<p>Two hearts. Two families. One beautiful beginning.</p>
 
 </footer>
 
-</body>
 
+
+<!-- COUNTDOWN SCRIPT -->
+
+<script>
+
+const weddingDate = new Date("Nov 20, 2026 00:00:00").getTime();
+
+setInterval(function(){
+
+const now = new Date().getTime();
+
+const distance = weddingDate - now;
+
+const days = Math.floor(distance / (1000*60*60*24));
+const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+const seconds = Math.floor((distance % (1000*60)) / 1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+},1000);
+
+</script>
+
+
+</body>
 </html>
