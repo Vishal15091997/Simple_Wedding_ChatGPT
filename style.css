@@ -234,12 +234,22 @@ color:#d4af37;
 
 /* COUPLE */
 
+/* COUPLE SECTION */
+
 .couple{
 
-display:flex;
-justify-content:center;
+display:grid;
+grid-template-columns:repeat(2,1fr);
 gap:80px;
-flex-wrap:wrap;
+max-width:1000px;
+margin:auto;
+align-items:center;
+
+}
+
+.person{
+
+text-align:center;
 
 }
 
@@ -250,12 +260,14 @@ height:260px;
 object-fit:cover;
 border-radius:50%;
 border:3px solid #d4af37;
+margin-bottom:15px;
 
 }
 
 .person h3{
 
 color:#d4af37;
+margin-bottom:10px;
 
 }
 
