@@ -14,6 +14,7 @@
 
 </head>
 
+
 <body>
 
 <!-- NAVBAR -->
@@ -100,24 +101,23 @@ Two Hearts • Two Families • One Beautiful Beginning
 
 
 
-<!-- OUR STORY (REVERTED) -->
+<!-- OUR STORY -->
 
 <section class="section" id="story">
 
 <h2>Our Story</h2>
 
-<h3 class="section-subtitle">
+<p class="section-subtitle">
 How Destiny Found Love Through An Arranged Marriage
-</h3>
+</p>
 
 <p class="story-text">
 
-What began as a simple introduction between two families slowly
-blossomed into something far more meaningful.
+What began as a simple introduction between two families slowly blossomed
+into something far more meaningful.
 
-In the quiet moments of conversation and shared laughter,
-two people discovered not only compatibility but also warmth,
-friendship and understanding.
+In the quiet moments of conversation and shared laughter, two people
+discovered not only compatibility but also warmth, friendship and understanding.
 
 An arranged meeting soon turned into countless conversations,
 shared dreams and a growing bond.
@@ -131,7 +131,7 @@ and this is where our story truly began.
 
 
 
-<!-- BRIDE & GROOM (REVERTED) -->
+<!-- COUPLE -->
 
 <section class="section couple" id="couple">
 
@@ -183,9 +183,9 @@ bring light and happiness wherever she goes.
 
 <h2>Wedding Celebrations</h2>
 
-<h3 class="section-subtitle">
+<p class="section-subtitle">
 Join us as we celebrate love and new beginnings
-</h3>
+</p>
 
 <div class="event-buttons">
 
@@ -234,13 +234,13 @@ Join us as we celebrate love and new beginnings
 
 <h2>Wedding Venue</h2>
 
-<h3 class="section-subtitle">
+<p class="section-subtitle">
 Fort Mangal Garh Palace
-</h3>
+</p>
 
 <div class="map-container">
 
-<iframe 
+<iframe
 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1316.4152288809514!2d79.7517349101983!3d25.400929850403486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399d37d6ba0796f1%3A0x3e6354077ca7413d!2sFort%20Mangal%20Garh%20Palace!5e0!3m2!1sen!2sin!4v1773569495432!5m2!1sen!2sin"
 loading="lazy">
 </iframe>
@@ -275,8 +275,6 @@ Two hearts. Two families. One beautiful beginning.
 
 
 
-<!-- COUNTDOWN SCRIPT -->
-
 <script>
 
 const weddingDate = new Date("Nov 20, 2026 00:00:00").getTime();
@@ -284,21 +282,25 @@ const weddingDate = new Date("Nov 20, 2026 00:00:00").getTime();
 setInterval(function(){
 
 const now = new Date().getTime();
+
 const distance = weddingDate - now;
 
-const days = Math.floor(distance / (1000*60*60*24));
-const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
-const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
-const seconds = Math.floor((distance % (1000*60)) / 1000);
+document.getElementById("days").innerHTML =
+Math.floor(distance / (1000*60*60*24));
 
-document.getElementById("days").innerHTML = days;
-document.getElementById("hours").innerHTML = hours;
-document.getElementById("minutes").innerHTML = minutes;
-document.getElementById("seconds").innerHTML = seconds;
+document.getElementById("hours").innerHTML =
+Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+
+document.getElementById("minutes").innerHTML =
+Math.floor((distance % (1000*60*60))/(1000*60));
+
+document.getElementById("seconds").innerHTML =
+Math.floor((distance % (1000*60))/1000);
 
 },1000);
 
 </script>
+
 
 </body>
 </html>
